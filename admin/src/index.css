@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: Inter, sans-serif;
+}
+
+body{
+    @apply bg-background text-body;
+}
+
+@media (max-width: 639px){
+    form > div{
+        min-width: 0 !important;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
